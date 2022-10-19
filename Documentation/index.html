@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>Documentation | Zoon - Coming Soon Template</title>
+<meta name="description" content="Documentation">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span></span></button>
+        <!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="Zoon Docs"> <img src="assets/images/logo.png" alt="Zoon Docs"/> </a><span class="text-6 text-black-50 font-weight-300 ml-1">docs</span>  <span class="text-2 ml-2 d-none d-sm-flex">v2.0</span> 
+        <!-- Logo End -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio">Other Template</a></li>
+            <li><a target="_blank" href="https://themeforest.net/item/x/31097749/support">Support</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2 d-none d-sm-flex">
+          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================================= -->
+  <div id="content" role="main">
+    <div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#start">Start</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#html_structure">HTML Structure</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fonts">Changing Fonts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#icons">Icons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sass">Sass</a></li>
+            <li class="nav-item"><a class="nav-link" href="#color_schemes">Color Schemes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#theme_customization">Customization</a></li>
+			<li class="nav-item"><a class="nav-link" href="#rtl">Setting up RTL</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#shortcodes">Shortcodes</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#hero_bg">Hero Background</a>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a class="nav-link" href="#hero_bg">Image</a></li>
+					<li class="nav-item"><a class="nav-link" href="#slider_bg">Slider</a></li>
+					<li class="nav-item"><a class="nav-link" href="#youtube_bg">Youtube Video</a></li>
+					<li class="nav-item"><a class="nav-link" href="#particles_bg">Particles</a></li>
+				</ul>
+			</li>
+			
+            <li class="nav-item"><a class="nav-link" href="#helper_classes">Helper Classes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#contact_form">Contact Form</a>
+			<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#contact_form">Setup</a></li>
+			<li class="nav-item"><a class="nav-link" href="#reCaptcha">Google reCaptcha</a>
+				<ul class="nav flex-column">
+				<li class="nav-item"><a class="nav-link" href="#reCaptcha-v2">reCaptcha v2</a></li>
+				<li class="nav-item"><a class="nav-link" href="#reCaptcha-v3">reCaptcha v3</a></li>
+				</ul>
+			</li>
+			</ul>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="#subscription">Subscription</a>
+			<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#subscription_mc">MailChimp</a></li>
+			<li class="nav-item"><a class="nav-link" href="#subscription_cm">Campaign Monitor</a></li>
+			<li class="nav-item"><a class="nav-link" href="#subscription_php">PHP Mail Subscription</a></li>
+			</ul>
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#source_credits">Source & Credits</a></li>
+        <li class="nav-item"><a class="nav-link" href="#theme_support">Support</a></li>
+		<li class="nav-item"><a class="nav-link" href="#changelog">Changelog</a></li>
+		<li class="nav-item"><a class="nav-link" href="#our_templates">Other Templates</a></li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Start -->
+        <section id="start">
+        <h1>Documentation</h1>
+        <h2>Zoon - Coming Soon Template</h2>
+        <p class="lead">Thank you for purchasing Zoon - Coming Soon Template on ThemeForest.</p>
+        
+		<hr>
+		
+        <ul class="list-unstyled">
+          <li><strong>Version:</strong> 2.0</li>
+          <li><strong>Created by:</strong> <a href="http://www.harnishdesign.net" target="_blank">Harnish Design</a></li>
+        </ul>
+        <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="https://themeforest.net/item/x/31097749/support">Item Support Page</a>.</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Installation -->
+        <section id="installation">
+          <h2>Installation</h2>
+          <p>Follow the steps below to setup your site template:</p>
+          <ol>
+            <li>Unzip the downloaded package and open the <strong>/HTML</strong> folder to find all the template files. You will need to upload these files to your hosting web server using FTP or localhost in order to use it on your website.</li>
+            <li>Below is the folder structure and needs to be uploaded to your website or localhost root directory:
+              <ul>
+                <li><code>HTML/css</code> - Stylesheet files</li>
+                <li><code>HTML/images</code> - Image files</li>
+                <li><code>HTML/js</code> - Javacript files</li>
+                <li><code>HTML/php</code> - PHP file for Contact form</li>
+                <li><code>HTML/sass</code> - Sass files</li>
+                <li><code>HTML/vendor</code> – All external libs.</li>
+              </ul>
+            </li>
+            <li>You should upload all or specific HTML files as per your need.</li>
+            <li>You're now good to go..!</li>
+          </ol>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- HTML Structure -->
+        <section id="html_structure">
+          <h2>HTML Structure</h2>
+          <p>Zoon follows a simple and easy to customize coding structure. Here is the sample for your reference:<br>
+            The template is based on <a class="ml-1" target="_blank" href="https://getbootstrap.com/"><i class="fas fa-external-link-alt"></i> Bootstrap Framework</a></p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;!-- Your Stylesheets, Scripts &amp; Title
+============================================= --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!-- Preloader --&gt;
+&lt;div class=&quot;preloader&quot;&gt;
+  ....
+&lt;/div&gt;
+&lt;!-- Preloader End --&gt; 
+
+&lt;!-- Document Wrapper
+=============================== --&gt;
+&lt;div id=&quot;main-wrapper&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    .......
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Document Wrapper End --&gt; 
+
+&lt;!-- Script --&gt; 
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p class="alert alert-info">If you need more information, please visit bootstrap site: <a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/grid/">https://getbootstrap.com/docs/5.0/layout/grid/</a></p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Fonts -->
+        <section id="fonts">
+          <h2>Changing Fonts</h2>
+          <p>Zoon template use fonts: <strong>Poppins</strong> from the <a href="https://fonts.google.com/">Google Fonts Library</a>. You can change the fonts from page head in HTML files (as following code). </p>
+          <pre><code class="html">&lt;!-- Web Fonts
+============================================= --&gt;
+&lt;link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'&gt;
+</code></pre>
+          <ul>
+		  <li>In order to change the Fonts, you will need to Edit the Above Links with your Chosen Google Fonts.</li>
+		  <li>Then Replace the <code>font-family</code> CSS Property in the <code>css/stylesheet.css</code> File with your Newly Added Fonts.</li>
+		  </ul>
+          <div class="alert alert-info">If you want to use self hosted fonts other than Google fonts then here is an example of <a class="ml-1" href="https://css-tricks.com/snippets/css/using-font-face/"><i class="fas fa-external-link-alt"></i> Self Hosted Fonts</a>.</div>
+        </section>
+        
+		<hr class="divider">
+        
+		<!-- Icons -->
+        <section id="icons">
+          <h2>Icons</h2>
+          <p><strong>Font Awesome</strong> icon sets are used in this template.</p>
+          <pre><code class="html">&lt;i class=&quot;fas fa-mobile-alt&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fas fa-credit-card&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt;
+......</code></pre>
+<p><span class="badge badge-danger text-uppercase mr-2">Note</span>Please go to their official documentation pages for a full list of icons: <a class="btn btn-primary" target="_blank" href="https://fontawesome.com/icons"><i class="fas fa-external-link-alt mr-1"></i> Font Awesome</a></p>
+        </section>
+        
+		<hr class="divider">
+        
+		<!-- Sass -->
+        <section id="sass">
+          <h2>Sass</h2>
+          <p>We have added SASS <code>.scss</code> files in template. If you know how to use SASS you can change sass files and compile the css as well.
+            You can find sass file here - <code>HTML/sass</code></p>
+          <p>Open the <code>sass/_variables.scss</code> and Edit the values according to your needs. If you need more Advanced Setup then you can Edit the Respective Files yourself which have been branched inside the same Folder. It is completely at your discretion only to include the Required <code>.scss</code> Files you need to minimize the amount of CSS & including only the Styles of the Blocks you need. This can be setup in your <code>stylesheet.scss</code> File.</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <section id="color_schemes">
+          <h2>Color Schemes</h2>
+          <p>You can change your Website's Color Scheme in an instant. We have build <strong>8 Color</strong> css file for change template primary color.</p>
+          <ul>
+            <li><code>color-cyan.css</code> - Cyan Color</li>
+            <li><code>color-green.css</code> - Green Color</li>
+            <li><code>color-orange.css</code> - Orange Color</li>
+            <li><code>color-indigo.css</code> - Indigo Color</li>
+            <li><code>color-purple.css</code> - Purple Color</li>
+			<li><code>color-pink.css</code> - Pink Color</li>
+            <li><code>color-red.css</code> - Red Color</li>
+            <li><code>color-teal.css</code> - Teal Color</li>
+            <li><code>color-yellow.css</code> - Yellow Color</li>
+          </ul>
+          <p>Simply add Color CSS file link it in the Document <code>&lt;head&gt;</code>.<br>
+            Make sure you add the <code>css/color-orange.css</code> stylesheet in your head after the <code>css/stylesheet.css</code> file linking from above mentioned color css file.</p>
+          <p><strong>For Example:</strong></p>
+          <pre><code class="html">&lt;head&gt;
+&lt;!-- Stylesheet
+============================================= --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;vendor/bootstrap/css/bootstrap.min.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;vendor/font-awesome/css/all.min.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/stylesheet.css&quot; /&gt;
+
+&lt;!-- Here goes your Colors Css --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/color-orange.css&quot; /&gt;
+&lt;/head&gt;</code></pre>
+        </section>
+        
+		<hr class="divider">
+		
+        <section id="theme_customization">
+          <h2>Theme Customization</h2>
+          <p>We have include a Custom CSS File in the <code>css</code> Folder so that you can better handle your Customizations for New Styles or
+            Overwriting Default Theme Styles. Simply add all your Custom CSS Codes in the <code>css/custom.css</code> File and link it in the Document <code>&lt;head&gt;</code> after the <code>css/stylesheet.css</code> Linking. Also make sure that this is the Last Linked CSS File in the Document <code>&lt;head&gt;</code> so that your Custom CSS Styles are Overwritten properly.</p>
+          <pre><code class="html">&lt;!-- Stylesheet
+============================================= --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;vendor/bootstrap/css/bootstrap.min.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;vendor/font-awesome/css/all.min.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/stylesheet.css&quot; /&gt;
+
+&lt;!-- Here goes your custom.css
+============================================= --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/custom.css&quot; /&gt;
+</code></pre>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- RTL -->
+        <section id="rtl">
+          <h2>Setting up RTL</h2>
+          <p>We have included all the Tools to make your Website completely <strong>RTL</strong> ready. Simply follow the steps below:</p>
+		  <h3 class="mt-5">Code Example:</h3>
+		  <ul>
+		  <li>
+			<h4 class="mb-0">Step 1</h4>
+			<p>Add the <code>dir="rtl"</code> to the <code>&lt;html&gt;</code> element.<br>
+			Add an appropriate lang attribute, like <code>lang="ar"</code>, on the <code>&lt;html&gt;</code> element.
+			</p>
+			<p class="mb-2"><strong>Example:</strong></p>
+			<pre><code class="html">&lt;html dir=&quot;rtl&quot; lang=&quot;ar&quot;&gt;</code></pre>
+		  </li>
+		  <li>
+			<h4 class="mb-0">Step 2</h4>
+			<p>From there, you’ll need to replace an RTL version of Bootstrap CSS instead of default bootstrap css.</p>
+			<p class="mb-2"><strong>Example:</strong></p>
+			<pre><code class="html">&lt;!-- Bootstrap --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;vendor/bootstrap/css/bootstrap.rtl.min.css&quot; /&gt;</code></pre>
+		  </li>
+		  <li>
+			<h4 class="mb-0">Step 3</h4>
+			<p>Add the <code>.rtl</code> Class to the <code>&lt;body&gt;</code> Tag.</p>
+			<p class="mb-2"><strong>Example:</strong></p>
+			<pre><code class="html">&lt;body class=&quot;rtl&quot;&gt;</code></pre>
+		  </li>
+		  </ul>
+		  
+		  
+          
+        </section>
+		
+		<hr class="divider">
+		
+        <!-- Shortcodes -->
+		<section id="shortcodes">
+          <h2>Shortcodes</h2>
+          <p class="lead mb-5">Setting up components is very easy. Here is the Some of shortcodes describe.</p>
+		</section>
+		
+        <section id="hero_bg">
+            <h2>Hero Background</h2>
+			<p class="lead mb-5">The list of various Hero Background types & its descriptions are provided below for your reference:</p>
+			
+			<h3>Image Background</h3>
+			<p class="lead">You can add Image as Background in Hero Background.</p>
+			
+			<h5>Code Example</h5>
+			<pre><code class="html">&lt;div class=&quot;hero-wrap&quot;&gt;
+  &lt;div class=&quot;hero-mask opacity-8 bg-dark&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;hero-bg hero-bg-scroll&quot; style=&quot;background-image:url('./images/intro-bg.jpg');&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;hero-content&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+    	
+        ...
+        
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<h5>Settings</h5>
+
+<ul class="list-unstyled">
+	<li><span class="badge badge-danger text-3 mr-2">1</span>You can use Opacity Utility Classes as per your needs for change Mask background opacity. - <a class="smooth-scroll" href="#opacity">List of Opacity Utility Classes</a></li>
+	<li><span class="badge badge-danger text-3 mr-2">2</span>You can use Background Color Utility Classes as per your needs for change Mask background Color. ( <strong>For Example:</strong> <code>.bg-dark</code>, <code>.bg-primary</code>, <code>.bg-light</code> etc... ) </li>
+	<li><span class="badge badge-danger text-3 mr-2">3</span>You can add your image path here.</li>
+	<li><span class="badge badge-danger text-3 mr-2">4</span>You can add <code>.hero-bg-scroll</code> css class for your background image as scroll. Remove <code>.hero-bg-scroll</code> css class for background image as cover. </li>
+</ul>
+<p><img class="img-fluid border" src="assets/images/hero-bg.jpg" alt=""></p>
+		</section>
+		
+		<hr class="divider">
+		
+		
+        <section id="slider_bg">
+            <h3>Slider Background</h3>
+			<p class="lead mb-5">You can add Image Slider as Background in Hero Background. You will need to use <strong>Owl-Carousel</strong> slider code in Hero background for that.</p>
+			
+			<h5>Code Example</h5>
+			<pre><code class="html">&lt;div class=&quot;hero-wrap&quot;&gt;
+  &lt;div class=&quot;hero-mask opacity-8 bg-dark&quot;&gt;&lt;/div&gt;
+  &lt;!-- Image Slider Background code --&gt;
+  &lt;div class=&quot;hero-bg-slideshow owl-carousel owl-theme single-slideshow&quot; data-animateout=&quot;fadeOut&quot; data-animatein=&quot;fadeIn&quot; data-autoplay=&quot;true&quot; data-loop=&quot;true&quot; data-dots=&quot;false&quot; data-nav=&quot;false&quot; data-items=&quot;1&quot;&gt;
+    &lt;div class=&quot;item intro-bg-3&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;item intro-bg-4&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;item intro-bg-5&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hero-content&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+    	
+        ...
+        
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<h5>Slider Image Settings:</h5>
+<ol class="mb-5">
+<li>First You will need to add your images in images folder. (with name <code>intro-bg.jpg</code>, <code>intro-bg-1.jpg</code> .... <code>intro-bg-10.jpg</code> etc...,).</li>
+<li>Then, Use <code>.intro-bg</code>, <code>.intro-bg-1</code> .... <code>.intro-bg-10</code> css class as per your need to show image in Item code.
+<br><strong>For Example:</strong><br><code>&lt;div class=&quot;item <b>intro-bg-3</b>&quot;&gt;&lt;/div&gt;</code></li>
+</ol>
+
+<h5>Owl-Carousel Settings:</h5>
+            <ul>
+              <li><code>data-items</code> - No. of Items to display in the Carousel. Eg. <strong>1</strong></li>
+              <li><code>data-items-lg</code> - No. of Items to display in the Carousel on Desktops/Laptops. Eg. <strong>5</strong></li>
+              <li><code>data-items-md</code> - No. of Items to display in the Carousel on Netbooks. Eg. <strong>5</strong></li>
+              <li><code>data-items-sm</code> - No. of Items to display in the Carousel on iPads/Tablets. Eg. <strong>4</strong></li>
+              <li><code>data-items-xs</code> - No. of Items to display in the Carousel on Mobile. Eg. <strong>3</strong></li>
+              <li><code>data-loop</code> - Enable/Disable Loop. Eg. <strong>true/false</strong></li>
+              <li><code>data-autoplay</code> - Enable/Disable autoplay. Eg. <strong>true/false</strong></li>
+              <li><code>data-autoplaytimeout</code> - Autoplay timer in milliseconds. Eg. <strong>5000</strong></li>
+              <li><code>data-autoplayhoverpause</code> - Enable/Disable autoplayHoverPause Eg. <strong>true/false</strong></li>
+              <li><code>data-speed</code> - Speed of the Carousel Animation in millisconds. Eg. <strong>700</strong></li>
+              <li><code>data-nav</code> - Enable/Disable Navigation Arrows. Eg. <strong>true/false</strong></li>
+              <li><code>data-dots</code> - Enable/Disable Pagination Dots. Eg. <strong>true/false</strong></li>
+              <li><code>data-margin</code> - Margin between Carousel Items in pixels. Eg. <strong>15</strong></li>
+              <li><code>data-stagepadding</code> Padding on the Edges of the Carousel Container in pixels. - Eg. <strong>20</strong></li>
+              <li><code>data-slideby</code> - No. of Items to Slide at once. Eg. <strong>2</strong></li>
+              <li><code>data-lazyload</code> - Enable/Disable Lazyload. Eg. <strong>true/false</strong></li>
+              <li><code>data-autoheight</code> - Enable/Disable autoHeight. Eg. <strong>true/false</strong></li>
+              <li><code>data-autowidth</code> - Enable/Disable autoWidth. Eg. <strong>true/false</strong></li>
+              <li><code>data-animateOut</code> - Enable/Disable animateOut. Eg. <strong>fadeOut/fadeIn</strong></li>
+              <li><code>data-animateIn</code> - Enable/Disable animateIn. Eg. <strong>fadeOut/fadeIn</strong></li>
+            </ul>
+			
+		</section>
+		
+		<hr class="divider">
+		
+		<section id="youtube_bg">
+            <h3>Youtube Background Video</h3>
+			<p class="lead mb-5">You can add Youtube Video as Background in Hero Background.</p>
+			
+			<h5>Code Example</h5>
+			<pre><code class="html">&lt;div class=&quot;hero-wrap&quot;&gt;
+  &lt;div class=&quot;hero-mask opacity-5 bg-dark&quot;&gt;&lt;/div&gt;
+  &lt;!-- Youtube Video Background code --&gt;
+  &lt;div class=&quot;player&quot; data-property=&quot;{videoURL:'https://youtu.be/fG_X-cx5Szg',containment:'.hero-wrap', showControls:false, addRaster: false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1}&quot;&gt;&lt;/div&gt;	
+  &lt;div class=&quot;hero-content&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+    	
+        ...
+        
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<p><span class="badge badge-danger text-uppercase mr-1">Note</span> You can see all the available options from here: <a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki">jQuery.mb.YTPlayer<i class="fas fa-external-link-alt ml-1"></i></a></p>
+			
+		</section>
+		<hr class="divider">
+		
+		<section id="particles_bg">
+            <h3>Particles</h3>
+			<p class="lead mb-5">You can add Particles in Background in Hero Background.</p>
+			
+			<h5>Code Example</h5>
+			<pre><code class="html">&lt;div class=&quot;hero-wrap&quot;&gt; 
+  &lt;div id=&quot;particles-js&quot; class=&quot;hero-particles&quot;&gt;&lt;/div&gt; &lt;!-- Particles code --&gt;
+  &lt;div class=&quot;hero-mask opacity-8 bg-dark&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;hero-bg hero-bg-scroll&quot; style=&quot;background-image:url('./images/intro-bg.jpg');&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;hero-content&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+    	
+        ...
+        
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<p><span class="badge badge-danger text-uppercase mr-1 mb-4">Note</span> You can see all the available options from here: <a target="_blank" href="https://github.com/VincentGarreau/particles.js">Particles.js<i class="fas fa-external-link-alt ml-1"></i></a></p>
+			
+		<h4>Particles Snow</h4>
+		<ul>
+		<li>You will need to use <code>#particles-snow</code> id in above particles code for show Snow Particles.</br>
+		<strong>For Example:</strong> 
+		<pre><code class="html">&lt;div id=&quot;particles-snow&quot; class=&quot;hero-particles&quot;&gt;&lt;/div&gt; &lt;!-- Particles Snow code --&gt;</code></pre>
+		</li>
+		<li>also, Simple Copy-paste the below JavaScript <code>&lt;script&gt;</code> into your bottom of the page before <code>&lt;/body&gt;</code>.
+		<pre><code class="html">&lt;script src=&quot;vendor/particles/particles.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;vendor/particles/particles-snow.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></pre>
+		</li>
+		</ul>
+		
+			
+		</section>
+		
+		<hr class="divider">
+		
+        <section id="helper_classes">
+            <h2>Helper Classes</h2>
+            <p class="mb-5">We have created some really useful helper classes for you. Here are a few of them. also, You can refer other default bootstrap helper classes here: <a class="ml-1" target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/"><i class="fas fa-external-link-alt"></i> Bootstrap Documentation</a> </p>
+            <h5>Text Size:</h5>
+            <ul>
+              <li><code>.text-0</code> - Changes the Font size to 11px.</li>
+              <li><code>.text-1</code> - Changes the Font size to 12px.</li>
+              <li><code>.text-2</code> - Changes the Font size to 14px.</li>
+              <li><code>.text-3</code> - Changes the Font size to 16px.</li>
+              <li><code>.text-4</code> - Changes the Font size to 18px.</li>
+              <li><code>.text-5</code> - Changes the Font size to 21px.</li>
+              <li><code>.text-6</code> - Changes the Font size to 24px.</li>
+              <li><code>.text-7</code> - Changes the Font size to 28px.</li>
+              <li><code>.text-8</code> - Changes the Font size to 32px.</li>
+              <li><code>.text-9</code> - Changes the Font size to 36px.</li>
+              <li><code>.text-10</code> - Changes the Font size to 40px.</li>
+              <li><code>.text-11</code> - Changes the Font size to 44px.</li>
+              <li><code>.text-12</code> - Changes the Font size to 48px.</li>
+              <li><code>.text-13</code> - Changes the Font size to 52px.</li>
+              <li><code>.text-14</code> - Changes the Font size to 56px.</li>
+              <li><code>.text-15</code> - Changes the Font size to 60px.</li>
+              <li><code>.text-16</code> - Changes the Font size to 64px.</li>
+              <li><code>.text-17</code> - Changes the Font size to 72px.</li>
+              <li><code>.text-18</code> - Changes the Font size to 80px.</li>
+              <li><code>.text-19</code> - Changes the Font size to 84px.</li>
+              <li><code>.text-20</code> - Changes the Font size to 92px.</li>
+			  <li><code>.text-21</code> - Changes the Font size to 104px.</li>
+			  <li><code>.text-22</code> - Changes the Font size to 112px.</li>
+			  <li><code>.text-23</code> - Changes the Font size to 124px.</li>
+			  <li><code>.text-24</code> - Changes the Font size to 132px.</li>
+			  <li><code>.text-25</code> - Changes the Font size to 144px.</li>
+            </ul>
+            <h5>Font Weight:</h5>
+            <ul>
+              <li><code>.fw-100</code> - For font weight of 100.</li>
+              <li><code>.fw-200</code> - For font weight of 200.</li>
+              <li><code>.fw-300</code> - For font weight of 300.</li>
+              <li><code>.fw-400</code> - For font weight of 400.</li>
+              <li><code>.fw-500</code> - For font weight of 500.</li>
+              <li><code>.fw-600</code> - For font weight of 600.</li>
+              <li><code>.fw-700</code> - For font weight of 700.</li>
+              <li><code>.fw-800</code> - For font weight of 800.</li>
+              <li><code>.fw-900</code> - For font weight of 900.</li>
+            </ul>
+            <h5>Background Color:</h5>
+            <ul>
+              <li><code>.bg-transparent</code> - For background color of transparent</li>
+              <li><code>.bg-light</code> - For background color of light gray</li>
+              <li><code>.bg-light-1</code> - For background color of more light gray</li>
+              <li><code>.bg-light-2</code> - For background color of more light gray</li>
+              <li><code>.bg-light-3</code> - For background color of more light gray</li>
+              <li><code>.bg-light-4</code> - For background color of more light gray</li>
+              <li><code>.bg-dark</code> - For background color of dark</li>
+              <li><code>.bg-dark-1</code> - For background color of dark gray</li>
+              <li><code>.bg-dark-2</code> - For background color of more dark gray</li>
+              <li><code>.bg-dark-3</code> - For background color of more dark gray</li>
+              <li><code>.bg-dark-4</code> - For background color of more dark gray</li>
+            </ul>
+            <h5>Box Shadow</h5>
+            <ul>
+              <li><code>.shadow-none</code> - For No shadow to elements with box-shadow utilities.</li>
+              <li><code>.shadow-sm</code> - For Small shadow to elements with box-shadow utilities.</li>
+              <li><code>.shadow</code> - For Regular shadow to elements with box-shadow utilities.</li>
+              <li><code>.shadow-md</code> - For medium light shadows to elements with box-shadow utilities.</li>
+              <li><code>.shadow-lg</code> - For Larger shadows to elements with box-shadow utilities.</li>
+            </ul>
+            <h5 id="opacity">Opacity</h5>
+            <ul>
+              <li><code>.opacity-1</code> - For 10% opacity.</li>
+              <li><code>.opacity-2</code> - For 20% opacity.</li>
+              <li><code>.opacity-3</code> - For 30% opacity.</li>
+              <li><code>.opacity-4</code> - For 40% opacity.</li>
+              <li><code>.opacity-5</code> - For 50% opacity.</li>
+              <li><code>.opacity-6</code> - For 60% opacity.</li>
+              <li><code>.opacity-7</code> - For 70% opacity.</li>
+              <li><code>.opacity-8</code> - For 80% opacity.</li>
+              <li><code>.opacity-9</code> - For 90% opacity.</li>
+            </ul>
+            <h5>Border Radius</h5>
+            <ul>
+              <li><code>.rounded-top-0</code> - No Border Radius for top.</li>
+              <li><code>.rounded-bottom-0</code> - No Border Radius for bottom.</li>
+              <li><code>.rounded-left-0</code> - No Border Radius for left.</li>
+              <li><code>.rounded-right-0</code> - No Border Radius for right.</li>
+            </ul>
+            <h5>Borders, Sizing, Spacing (margin & padding) and also much more....</h5>
+            <div class="alert alert-info"><span class="badge badge-danger text-uppercase mr-2">Note</span>You can refer for use other default bootstrap helper classes here - <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/">https://getbootstrap.com/docs/5.0/utilities/</a></div>
+        </section>
+        
+		<hr class="divider">
+		
+        <section id="contact_form">
+          <h2>Contact Form</h2>
+          <p>Contact us form will not work unless you have your files running on a hosting server with PHP / JS. When you have your files ready on your hosting server, you need to edit the settings to make the email function work.</p>
+		  <p class="mb-4">Open the <code>php/mail.php</code> File to make the following changes:</p>
+		  
+		  
+		  <h4 class="mb-2">Receiving Form Responses</h4>
+		  <p>Add your Email Address to receive Email Responses by using the following code below:</p>
+		  <pre><code class="php">/*--------------------------------------------
+	// Receiver's Email
+---------------------------------------------*/
+
+$toEmail = &quot;your-email@website.com&quot;; // Replace Your Email Address
+</code></pre>
+
+
+<h4 class="mb-2">Sender/Company Email to send Emails</h4>
+		  <p>Add a Sender Email by using the following code below:</p>
+		  <pre class="mb-2"><code class="php">/*--------------------------------------------
+	// Sender's Email
+---------------------------------------------*/
+
+$fromEmail = &quot;no-reply@website.com&quot;;  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromName = &quot;Company Name&quot;; // Replace Company Name
+</code></pre>
+<p><span class="badge badge-danger text-uppercase mr-2">Note</span>Some Web Hosting services enforce you to use the same Domain Name in your Email Address as your Hosting Account, to prevent SPAM. So make sure that <code>@website.com</code> above is same as your Domain’s Hosting Account.</p>
+
+<hr class="my-5">
+
+<h4 class="mb-2">Using SMTP</h4>
+		  <p>Some Hosting Servers disable the use of PHP <strong>mail()</strong> Function to prevent SPAM. So you can use the SMTP Functionality to Send Emails. Simply add the following code after the <code>$mail = new PHPMailer(true);</code> Line of Code:</p>
+		  <pre class="mb-2"><code class="php">$mail-&gt;isSMTP();
+$mail-&gt;SMTPDebug = 0;
+$mail-&gt;Host = 'mail.yourdomain.com';
+$mail-&gt;SMTPAuth = true;
+$mail-&gt;Username = &quot;yourname@yourdomain.com&quot;;
+$mail-&gt;Password = &quot;yourpassword&quot;;
+$mail-&gt;SMTPSecure = 'tls';
+$mail-&gt;Port = 587;
+</code></pre>
+
+
+
+<hr class="divider">
+
+
+		  <h2 id="reCaptcha" class="mb-2 mt-5">Google reCaptcha</h2>
+		  <p class="lead">if you want to use <strong>Google reCaptcha</strong> for Contact Form Protection. then follow below details.</p>
+		  <p>To setup reCaptcha Form Protection, you will need to obtain a Set of <strong>Site/Secret</strong> Keys from the <a href="https://www.google.com/recaptcha/admin" target="_blank">Google reCaptcha Website</a>. Then follow the Steps below to Setup the Keys for your Form:</p>
+		  
+		  <h4 id="reCaptcha-v2" class="mb-2 mt-5">Google reCaptcha v2</h4>
+		  <ol>
+			<li>
+				<p>Add the following code to your Form and replace <code>YOUR-RECAPTCHA-SITE-KEY-HERE</code> with your reCaptcha site key:</p>
+				<pre class="mb-2"><code class="php">&lt;script src=&quot;https://www.google.com/recaptcha/api.js&quot; async defer&gt;&lt;/script&gt;
+&lt;div id=&quot;recaptcha-v2&quot; data-sitekey=&quot;YOUR-RECAPTCHA-SITE-KEY-HERE&quot; class=&quot;g-recaptcha&quot; &gt;&lt;/div&gt;
+</code></pre>
+
+<p class="text-info font-weight-500">Like the image below:</p>
+<p><img class="img-fluid border" src="assets/images/recaptcha-v2.jpg" alt=""></p>
+
+			</li>
+			<li>
+				<p>Find the following code in the <code>php/mail.php</code> File and add your Secret Key:</p>
+				<pre><code class="php">/* --------------------------------------------
+  // reCaptcha Secret
+  --------------------------------------------- */
+
+// Add this only if you want to use Google reCaptcha with your Contact Forms.
+$recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY'; // Your Google reCaptcha Secret
+</code></pre>
+			</li>
+		  </ol>
+		  
+		  <h4 id="reCaptcha-v3" class="mb-2 mt-5">Google reCaptcha v3</h4>
+		  <ol>
+			<li>
+				<p>Add the script of Google Recaptcha v3 on footer of document and replace <code>YOUR-RECAPTCHA-SITE-KEY-HERE</code> with your reCaptcha site key.</p>
+				<pre class="mb-2"><code class="php">&lt;script id=&quot;google-recaptcha-v3&quot; src=&quot;https://www.google.com/recaptcha/api.js?render=YOUR-RECAPTCHA-SITE-KEY-HERE&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p class="text-info font-weight-500">Like the image below:</p>
+<p><img class="img-fluid border" src="assets/images/recaptcha-v3.jpg" alt=""></p>
+
+			</li>
+			<li>
+				<p>Find the following code in the <code>php/mail.php</code> File and add your Secret Key:</p>
+				<pre class=""><code class="php">/* --------------------------------------------
+  // reCaptcha Secret
+  --------------------------------------------- */
+
+// Add this only if you want to use Google reCaptcha with your Contact Forms.
+$recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY'; // Your Google reCaptcha Secret
+</code></pre>
+			</li>
+		  </ol>
+
+        </section>
+        
+		<hr class="divider">
+		
+		<section id="subscription">
+          <h2>Subscriptions</h2>
+          <p class="lead">There are 3 options available for setup Subscriptions.  You can setup any one of them as per the list below.</p>
+		  
+<ul class="font-weight-600 text-4">
+<li><a class="smooth-scroll" href="#subscription_mc">MailChimp Subscriptions Setup</a></li>
+<li><a class="smooth-scroll" href="#subscription_cm">Campaign Monitor Subscriptions Setup</a></li>
+<li><a class="smooth-scroll" href="#subscription_php">PHP Mail Newsletter Form Setup</a></li>
+</ul>
+
+
+</section>
+
+		<hr class="divider">
+		
+		<section id="subscription_mc">
+          <h2>MailChimp Subscriptions Setup</h2>
+          <p class="lead mb-4">To setup your MailChimp Signup Form,</p>
+<ol>
+<li><p>First of all make sure that have <code>subscribe.php</code> file specified in the Form Action in HTML File.
+<br><span class="text-info font-weight-500">Like the image below:</span>
+</p>
+
+<p><img class="img-fluid border" src="assets/images/subscribe.jpg" alt=""></p></li>
+		  
+		  
+		  <li><p class="mb-4">Then, You will have to add your <strong>API Key</strong> & your <strong>List ID</strong> to <code>php/subscribe.php</code> File:</p>
+		  
+		  
+		  <h5 class="mb-2">Code Example:</h5>
+		  
+		  <pre><code class="php">$apiKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us1'; // Your MailChimp API Key
+$listId = 'xxxxxxxx'; // Your MailChimp List ID
+</code></pre>
+<ul class="font-weight-600">
+<li><a target="_blank" href="https://mailchimp.com/help/about-api-keys/">About Your API Key</a></li>
+<li><a target="_blank" href="https://mailchimp.com/help/find-audience-id/">Find Your List ID</a></li>
+</ul>
+</li>
+</ul>
+
+
+</section>
+
+<hr class="divider">
+
+<section id="subscription_cm">
+<h2>Campaign Monitor Subscriptions Setup</h2>
+		  
+<p class="lead mb-4">To setup your Campaign Monitor Signup Form,</p>
+<ol>
+<li><p>First of all make sure that have <code>subscribe-cm.php</code> file specified in the Form Action in HTML File.
+<br><span class="text-info font-weight-500">Like the image below:</span></p>
+<p><img class="img-fluid border" src="assets/images/subscribe-cm.jpg" alt=""></p></li>
+<li><p>Then, You will have to add your <strong>API Key</strong> & your <strong>List ID</strong> to <code>php/subscribe-cm.php</code> File:</p>
+<h5 class="mb-2">Code Example:</h5>
+
+<pre><code class="php">$apiKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'; // Your Campaign Monitor API Key
+		  
+$listId = 'xxxxxxxx'; // Your Campaign Monitor List ID
+</code></pre>
+<ul>
+<li class="font-weight-600"><a target="_blank" href="https://help.createsend.com/admin/api-keys#instructions">About Your API Key</a></li>
+<li class="mb-0"><span class="font-weight-700">Find Your List ID:</span>
+<ol>
+<li>Login to your <strong>Campaign Monitor Account</strong></li>
+<li>Select <strong>Lists and subscribers</strong> from the top menu</li>
+<li>Click on the list that you want to integrate</li>
+<li>Click <strong>Settings</strong> in the Left sidebar.</li>
+<li>Then, You can find your <strong>List API ID</strong> in bottom of page.</li>
+</ol>
+</li>
+</ul>
+
+</li>
+</ol>
+
+
+</section>
+
+<hr class="divider">
+
+
+<section id="subscription_php">
+          <h2>PHP Mail Newsletter Form</h2>
+          <p class="lead">You can setup simple PHP Mail Newsletter Form instead of MailChimp and Campaign Monitor.</p>
+		  
+		  <p>First of all make sure that have <code>subscribe-email.php</code> file specified in the Form Action in HTML File.
+		  <br><span class="text-info font-weight-500">Like the image below:</span></p>
+		  <p><img class="img-fluid border" src="assets/images/subscribe-email.jpg" alt=""></p>
+		  <h4 class="mb-2">Receiving Form Responses</h4>
+		  <p>Add your Email Address in the <code>php/subscribe-email.php</code> file to start receiving Form Responses.</p>
+		  
+<pre><code class="php">$toemails[] = array(
+	'email' => 'username@website.com', // Your Brand Mail ID
+	'name' => 'Your Name' // Your Name
+);</code></pre>
+
+<hr class="my-5">
+
+<h4 class="mb-2">Using SMTP</h4>
+		  <p>Some Hosting Servers disable the use of PHP <strong>mail()</strong> Function to prevent SPAM. So you can use the SMTP Functionality to Send Emails. Simply add the following code after the <code>$mail = new PHPMailer();</code> Line of Code:</p>
+		  <pre class="mb-2"><code class="php">$mail-&gt;isSMTP();
+$mail-&gt;SMTPDebug = 0;
+$mail-&gt;Host = 'mail.yourdomain.com';
+$mail-&gt;SMTPAuth = true;
+$mail-&gt;Username = &quot;yourname@yourdomain.com&quot;;
+$mail-&gt;Password = &quot;yourpassword&quot;;
+$mail-&gt;SMTPSecure = 'tls';
+$mail-&gt;Port = 587;
+</code></pre>
+
+</section>
+
+<hr class="divider">
+        
+        <!-- Source & Credits -->
+        <section id="source_credits">
+          <h2>Source & Credits</h2>
+          <h5>Fonts:</h5>
+          <ul>
+            <li>Google Fonts - <a target="_blank" href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+            <li>Icons Font-face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+          </ul>
+          <h5>Scripts:</h5>
+          <ul>
+            <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+            <li>Bootstrap 5 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+			<li>jQuery Form - <a target="_blank" href="https://github.com/jquery-form/form">https://github.com/jquery-form/form</a></li>
+			<li>jQuery Validation - <a target="_blank" href="https://jqueryvalidation.org/">https://jqueryvalidation.org/</a></li>
+			<li>jQuery Countdown - <a target="_blank" href="http://hilios.github.io/jQuery.countdown/">http://hilios.github.io/jQuery.countdown/</a></li>
+			<li>Magnific Popup - <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+			<li>Owl Carousel - <a target="_blank" href="https://owlcarousel2.github.io/OwlCarousel2/">https://owlcarousel2.github.io/OwlCarousel2/</a></li>
+			<li>Particles - <a target="_blank" href="https://github.com/VincentGarreau/particles.js">https://github.com/VincentGarreau/particles.js</a></li>
+			<li>YouTube Player - <a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer">https://github.com/pupunzi/jquery.mb.YTPlayer</a></li>
+			
+          </ul>
+		  <h5>PHP:</h5>
+          <ul>
+			<li>PHPMailer - <a target="_blank" href="https://github.com/PHPMailer/PHPMailer">https://github.com/PHPMailer/PHPMailer</a></li>
+          </ul>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Support -->
+        <section id="theme_support">
+          <h2>Support</h2>
+          <p>If this documentation doesn't answer your questions, So, Please send us Email via <a class="btn btn-primary" target="_blank" href="https://themeforest.net/item/x/31097749/support">Item Support Page</a></p>
+		  <p> We are located in GMT +5:30 time zone and we answer all questions within 12-24 hours in weekdays. In some rare cases the waiting time can be to 48 hours. (except holiday seasons which might take longer).</p>
+          <div class="alert alert-warning mb-4"><span class="badge badge-danger text-uppercase">Note:</span> While we aim to provide the best support possible, please keep in mind that it only extends to verified buyers and only to issues related to our template like bugs and errors. Custom modifications or third party module implementations are not included.</div>
+          
+		  
+		  <h4>Don’t forget to Rate this template
+			<i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i>
+		  </h4>
+		  <div class="alert alert-success text-4">
+            Please Add your Review (Opinion) for Our template. It would be a great support for us.<br>
+            Go to your <strong>Themeforest Profile</strong> > <strong>Downloads Tab</strong> > & then You can Rate & Review for our template.<br>
+			Thank You.
+          </div>
+			
+        </section>
+		
+		<hr class="divider">
+		
+        <!-- Changelog -->
+        <section id="changelog">
+          <h2>Changelog</h2>
+          <p class="alert alert-info"> For Future Updates Follow Us <a target="_blank" href="http://themeforest.net/user/harnishdesign">@themeforest</a> / <a target="_blank" href="http://facebook.com/harnishdesign">@facebook</a> / <a target="_blank" href="http://twitter.com/harnishdesign">@twitter</a> / <a target="_blank" href="https://dribbble.com/harnishdesign">@Dribbble</a></p>
+          <p class="alert alert-warning mb-5">The best way is to use a compare tool for update template, like this one: <a target="_blank" href="http://kdiff3.sourceforge.net/">http://kdiff3.sourceforge.net/</a> – and use it to compare the folders (your current website and the new version). <strong>Updating HTML templates requires manual work.</strong></p>
+          <h3>v2.0</h3>
+		  <ul class="changelog">
+            <li><span class="badge badge-success">Added</span> RTL Support</li>
+			<li><span class="badge badge-success">Added</span> Work (projects) images with Magnific Popup in About us</li>
+			<li><span class="badge badge-info">Updated</span> Bootstrap to Latest Version (v5.0.2)</li>
+			<li><span class="badge badge-danger">Fixed</span> Some minor issues and improvement.</li>
+          </ul>
+		  <h3>v1.1</h3>
+		  <ul class="changelog">
+            <li><span class="badge badge-success">Added</span> New 15 Variants Demos. (Solid Color Primary, Slider, Particles, Particles Snow, YouTube Video etc..)</li>
+            <li><span class="badge badge-success">Added</span> Campaign Monitor Subscriptions</li>
+			<li><span class="badge badge-info">Updated</span> Documentation Details.</li>
+          </ul>
+		  <h3>v1.0</h3>
+          <p>Initial Release</p>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- More Templates
+		============================ -->
+        <section id="our_templates">
+          <h2>Other Templates</h2>
+          <p class="lead">Don't forget to Checkout Our Below Other Templates.</p>
+		  
+		  <div class="row">
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/32172026?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/mxapp.jpg" alt="">
+			<h6 class="pt-2">MXapp - App Landing Page</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/31583297?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/callum.jpg" alt="">
+			<h6 class="pt-2">Callum - Personal Portfolio Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/28476751?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/simone.jpg" alt="">
+			<h6 class="pt-2">Simone - Personal Portfolio Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/26454458?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/kenil.jpg" alt="">
+			<h6 class="pt-2">Kenil - Responsive Bootstrap 4 One Page Portfolio Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/26313677?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/doon.jpg" alt="">
+			<h6 class="pt-2">Doon - One Page Parallax HTML Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/27172933?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/domainx.jpg" alt="">
+			<h6 class="pt-2">DomainX- Domain for Sale HTML Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/28848609?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/oxyy.jpg" alt="">
+			<h6 class="pt-2">Oxyy - Login and Register Form HTML Templates</h6>
+			</a>
+		  </div>
+		  
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/27034971?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/koice.jpg" alt="">
+			<h6 class="pt-2">Koice - Invoice HTML Template</h6>
+			</a>
+		  </div>
+		  
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/24017808?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/payyed.jpg" alt="">
+			<h6 class="pt-2">Payyed - Money Transfer and Online Payments HTML Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/22375065?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/quickai.jpg" alt="">
+			<h6 class="pt-2">Quickai - Recharge & Bill Payment, Booking HTML5 Template</h6>
+			</a>
+		  </div>
+		  </div>
+		  
+		  <p class="text-center"><a class="btn btn-lg btn-primary my-4" target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Our Portfolio</a></p>
+          
+        </section>
+        
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================================= -->
+  <footer class="footer section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="social-icons-twitter"><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+		<li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+      </ul>
+      <p class="text-muted text-center">Copyright &copy; 2021 <a href="http://www.harnishdesign.net/">HarnishDesign</a>. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top
+============================================= --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript --> 
+
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Highlight JS --> 
+<!-- Custom Script --> 
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
