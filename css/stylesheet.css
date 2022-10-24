@@ -137,14 +137,14 @@ img {
 }
 
 a, a:focus {
-  color: #0d6efd;
+  color: #007fb5;
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
 a:hover, a:active {
-  color: #025de4;
+  color: #00e0fb;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   text-decoration: underline;
