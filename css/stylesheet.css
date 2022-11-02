@@ -2062,7 +2062,7 @@ body:not(.rtl) #footer .nav .nav-item:last-child .nav-link {
   color: #C4302B;
 }
 .social-icons li:hover.social-icons-instagram a, .social-icons.social-icons-colored li.social-icons-instagram a {
-  color: #3F729B;
+  color: #ff0000;
 }
 .social-icons li:hover.social-icons-skype a, .social-icons.social-icons-colored li.social-icons-skype a {
   color: #00AFF0;
@@ -2071,7 +2071,7 @@ body:not(.rtl) #footer .nav .nav-item:last-child .nav-link {
   color: #6567A5;
 }
 .social-icons li:hover.social-icons-vk a, .social-icons.social-icons-colored li.social-icons-vk a {
-  color: #2B587A;
+  color: #0077ff;
 }
 .social-icons li:hover.social-icons-xing a, .social-icons.social-icons-colored li.social-icons-xing a {
   color: #126567;
@@ -2105,6 +2105,9 @@ body:not(.rtl) #footer .nav .nav-item:last-child .nav-link {
 }
 .social-icons li:hover.social-icons-apple a, .social-icons.social-icons-colored li.social-icons-apple a {
   color: #000;
+}
+.social-icons li:hover.social-icons-telegram a, .social-icons.social-icons-colored li.social-icons-telegram a {
+  color: #29a9ea;
 }
 .social-icons.social-icons-colored li:hover a {
   color: #999;
