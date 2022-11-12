@@ -10,8 +10,8 @@ require './phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Brand Mail ID
-				'name' => 'Your Name' // Your Name
+				'email' => 'iseet@internet.ru', // Your Brand Mail ID
+				'name' => 'Ama Tsorinsky' // Your Name
 			);
 
 // Form Processing Messages
